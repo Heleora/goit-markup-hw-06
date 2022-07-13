@@ -7,7 +7,8 @@
     --logo-color: #000000;
     --closing-button-fill: #000000;
     --closing-button-border: rgba(0, 0, 0, .1);
-    --text-placeholder: rgba(117, 117, 117, 0.5);
+    --text-placeholder: rgba(117, 117, 117, .5);
+    --footer-input-border: rgba(255, 255, 255, .3);
 
     --accent-color: #2196f3;
     --accent-color-hover: #188ce8;
@@ -570,6 +571,10 @@ footer {
     display: inline-block;
     margin-bottom: 20px;}
 
+.footer-address {
+    min-width: 216px;
+}
+
 .footer-socials {
     margin-left: 70px;
     margin-top: 12px;
@@ -612,8 +617,41 @@ footer {
     border-radius: 50%;
 }
 
+.footer-form {
+width: 570px;
+margin-top: 12px;
+margin-left: auto;
+}
+
+.footer-form-item {
+    position: relative;
+}
+
+.form-field.footer-form-field {
+    margin: 0;
+    width: 355px;
+    height: 50px;
+    padding: 15px 15px 15px 80px;
+    border: 1px solid var(--footer-input-border);
+    border-radius: 4px;
+    background-color: inherit;
+}
+
+.footer-form-label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: var(--text-address-color);
+}
+
+.form-button.footer-button {
+    display: inline-block;
+    margin-left: 11px;
+}
 
 /* MODAL */
+
 .modal-backdrop {
     position: fixed;
     top: 0;
@@ -638,7 +676,7 @@ footer {
     top: 50%;
     left: 50%;
     width: 530px;
-    height: 610px;
+    height: 600px;
     background-color: var(--background-modal);
     border-radius: 4px;
     padding: 40px;
@@ -703,19 +741,22 @@ form {
 
  .form-field {
     width: 100%;
+    height: 40px;
     padding: 12px 16px 12px 16px;
     border: 1px solid var(--form-field-border);
     border-radius: 4px;
+        
 }
 
- .form-field:focus {
-    border-color: blue;
+.form-field:hover,
+.form-field:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
 
-    /* border: 1px solid var(--accent-color); */
  }
 
  textarea.form-field {
-    max-height: 120px;
+    height: 120px;
     resize: none;
     padding: 12px 16px;
     margin-bottom: 20px;
@@ -750,6 +791,7 @@ form {
     width: 200px;
     height: 50px;
     margin: 0 auto;
+    padding: 10px 0;
 
     color: var(--text-color-secondary);
     font-weight: 700;
