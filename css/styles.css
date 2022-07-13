@@ -745,6 +745,8 @@ form {
     padding: 12px 16px 12px 16px;
     border: 1px solid var(--form-field-border);
     border-radius: 4px;
+
+    transition: border 250ms var(--transition-timing-function);
         
 }
 
