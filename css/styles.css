@@ -820,13 +820,18 @@ form {
     display: none;
     } */
 
-.checkbox-field:checked + .checkbox-border {
+.checkbox-field:checked + .checkbox-border
+{
     background-color: var(--accent-color);
     background-image: url('../images/icon-check.svg');
     background-repeat: no-repeat;
     background-size: contain;
     border-color: var(--accent-color);
     border-top-width: 3px;
+}
+
+.checkbox-field:focus+.checkbox-border {
+    border-color: var(--accent-color);
 }
 
 .checkbox-label {
