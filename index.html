@@ -385,10 +385,11 @@
     <form class="footer-form">
         <p class="footer-socials-text">Подпишитесь на рассылку</p>
         <div class="footer-form-item">
-            <label class="footer-form-label">
+            <label class="footer-form-label" for="user-email-subscribe">
                 <span  lang="en">E-mail</span>
-                </label>
-                <input type="email" class="form-field footer-form-field" name="user-email-subscribe" />
+            </label>
+            <input type="email" class="form-field footer-form-field" name="user-email-subscribe" id="user-email-subscribe"/>
+                
             
             <button type="submit" class="form-button footer-button">
                 Подписаться
@@ -410,8 +411,9 @@
                 <use href="./images/icons.svg#icon-closing"></use>
             </svg>
         </button>
-        <form>
-            <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+        <div role="group" aria-labelledby="contact-details">
+            <form>
+                <p class="form-title" id="contact-details">Оставьте свои данные, мы вам перезвоним</p>
             
                 <div class="form-item">
                     <label class="form-text" for="user-name">Имя</label>
@@ -426,7 +428,7 @@
                     <svg class="input-icon">
                         <use href="./images/icons.svg#icon-tel"></use>
                     </svg>
-                </div>               
+                </div>
                 <div class="form-item">
                     <label class="form-text" for="user-mail">Почта</label>
                     <input class="form-field" type="email" name="user-mail" id="user-mail" />
@@ -439,16 +441,24 @@
                     <textarea class="form-field" name="comment" id="comment" rows="6" placeholder="Введите текст"></textarea>
                 </div>
             
-                    <div class="checkbox">
-                    <label class="checkbox-text">
-                    <input class="checkbox-field" type="checkbox" name="agreement" value="true" />
-                    Соглашаюсь с рассылкой и принимаю 
-                    <a href="#" class="checkbox-link"> Условия договора</a>
+                <div class="checkbox">
+                    <label class="checkbox-label">
+                        <input class="checkbox-field" type="checkbox" name="agreement" value="true" />
+                        <span class="checkbox-border">
+                            <!-- <svg class="checkbox-icon">
+                                        <use href="./images/icons.svg#icon-checkbox">
+                                    
+                                        </use>
+                                    </svg> -->
+                        </span>
+                        <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю </span>
+                        <a href="#" class="checkbox-link"> Условия договора</a>
                     </label>
-                    </div>
-
-                    <button type="submit" class="form-button">Отправить</button>
-        </form>
+                </div>
+            
+                <button type="submit" class="form-button">Отправить</button>
+            </form>
+        </div>
         
     </div>
 </div>
@@ -457,15 +467,3 @@
 <script src="./js/modal.js"></script>
 </body>
 </html>
-
-<!-- <form class="footer-form">
-        <p class="footer-socials-text">Подпишитесь на рассылку</p>
-        <div>
-            <label>
-                <span class="footer-form-label" lang="en">E-mail</span>
-                <input type="email" class="footer-form-field"/>
-            </label>
-        <button type="submit" class="form-button footer-button">Подписаться</button>
-        </div>
-        
-    </form> -->

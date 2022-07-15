@@ -213,14 +213,14 @@
 </main>
 <footer>
     <div class="container page-footer">
-        <div>
+        <div class="footer-address">
             <a class="logo" href="./index.html"><span class="part">Web</span>Studio</a>
             <address>
                 <p class="mail location">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul>
                     <li class="footer-contact"><a class="contact mail"
                             href="mailto:info@example.com">info@example.com</a></li>
-                    <li class="footer-contact"><a class="contact mail" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="footer-contact"><a class=" contact mail" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
             </address>
@@ -259,6 +259,23 @@
 
             </ul>
         </div>
+        <form class="footer-form">
+            <p class="footer-socials-text">Подпишитесь на рассылку</p>
+            <div class="footer-form-item">
+                <label class="footer-form-label" for="user-email-subscribe">
+                    <span lang="en">E-mail</span>
+                </label>
+                <input type="email" class="form-field footer-form-field" name="user-email-subscribe" id="user-email-subscribe" />
+
+                <button type="submit" class="form-button footer-button">
+                    Подписаться
+                    <svg class="footer-button-icon">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </div>
+
+        </form>
     </div>
 </footer>
 </body>
