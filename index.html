@@ -393,7 +393,7 @@
             
             <button type="submit" class="form-button footer-button">
                 Подписаться
-                    <svg class="footer-button-icon">
+                    <svg class="footer-button-icon" aria-hidden="true">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg>
             </button>
@@ -404,35 +404,35 @@
 </footer>
 
 <!-- Modal Window -->
-<div class="modal-backdrop is-hidden" data-modal>
+<div class="modal-backdrop " data-modal>
     <div class="modal">
         <button type="button" class="modal-closing-button" data-modal-close>
             <svg class="closing-icon" height="18px" width="18px" aria-label="Закрыть окно">
                 <use href="./images/icons.svg#icon-closing"></use>
             </svg>
         </button>
-        <div role="group" aria-labelledby="contact-details">
-            <form>
+        <form>
+            <div role="group" aria-labelledby="contact-details">
                 <p class="form-title" id="contact-details">Оставьте свои данные, мы вам перезвоним</p>
             
                 <div class="form-item">
                     <label class="form-text" for="user-name">Имя</label>
                     <input class="form-field" type="text" name="user-name" id="user-name" />
-                    <svg class="input-icon">
+                    <svg class="input-icon" aria-hidden="true">
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                 </div>
                 <div class="form-item">
                     <label class="form-text" for="user-tel">Телефон</label>
                     <input class="form-field" type="tel" name="user-tel" id="user-tel" />
-                    <svg class="input-icon">
+                    <svg class="input-icon" aria-hidden="true">
                         <use href="./images/icons.svg#icon-tel"></use>
                     </svg>
                 </div>
                 <div class="form-item">
                     <label class="form-text" for="user-mail">Почта</label>
                     <input class="form-field" type="email" name="user-mail" id="user-mail" />
-                    <svg class="input-icon">
+                    <svg class="input-icon" aria-hidden="true">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                 </div>
@@ -440,10 +440,10 @@
                     <label class="form-text" for="comment">Комментарий</label>
                     <textarea class="form-field" name="comment" id="comment" rows="6" placeholder="Введите текст"></textarea>
                 </div>
-            
+        </div>
                 <div class="checkbox">
                     <label class="checkbox-label">
-                        <input class="checkbox-field" type="checkbox" name="agreement" value="true" />
+                        <input class="checkbox-field visually-hidden" type="checkbox" name="agreement" value="true" />
                         <span class="checkbox-border">
                             <!-- <svg class="checkbox-icon">
                                         <use href="./images/icons.svg#icon-checkbox">
@@ -458,8 +458,6 @@
             
                 <button type="submit" class="form-button">Отправить</button>
             </form>
-        </div>
-        
     </div>
 </div>
 

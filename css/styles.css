@@ -197,7 +197,8 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin-bottom: 50px;}
+    margin-bottom: 50px;
+}
 
 .visually-hidden {
     position: absolute;
@@ -796,6 +797,8 @@ form {
     letter-spacing: 0.01em;
 }
 
+/* Checkbox */
+
 .checkbox {
     margin-bottom: 30px;
 }
@@ -830,7 +833,7 @@ form {
     border-top-width: 3px;
 }
 
-.checkbox-field:focus+.checkbox-border {
+.checkbox:focus-within .checkbox-border {
     border-color: var(--accent-color);
 }
 
