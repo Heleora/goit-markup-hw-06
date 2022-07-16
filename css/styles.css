@@ -432,7 +432,9 @@ header {
     transition: fill 250ms var(--transition-timing-function)
 }
 
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon
+ {
     fill: var(--accent-color);}
 
 
@@ -719,7 +721,8 @@ footer {
     fill: var(--closing-button-fill);
     transition: fill 250ms var(--transition-timing-function);
 }
-.closing-icon:hover {
+.closing-icon:hover,
+.closing-icon:focus {
     fill: var(--accent-color);
 }
 
@@ -878,6 +881,7 @@ form {
     transition: background-color 250ms var(--transition-timing-function);
 }
 
-.form-button:hover {
+.form-button:hover,
+.form-button:focus {
     background-color: var(--accent-color-hover);
 }
